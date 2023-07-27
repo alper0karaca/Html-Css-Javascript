@@ -1,1 +1,0 @@
-![Proje resmi ](projectimage.png)
