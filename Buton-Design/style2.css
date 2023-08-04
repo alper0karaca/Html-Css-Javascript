@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 40px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+a:nth-child(1) {
+    --bg: #b6ef00;
+}
+
+a:nth-child(2) {
+    --bg: #c4f5fc;
+}
+
+a:nth-child(3) {
+    --bg: #e2a0ff;
+}
+a {
+    background-color: var(--bg);
+    color: black;
+    text-decoration: none;
+    padding: 25px 30px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    transition: all ease 0.3s;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.btn-hover:nth-child(1) {
+    --b: 1;
+}
+
+.btn-hover:nth-child(2) {
+    --b: 2;
+}
+
+.btn-hover:nth-child(3) {
+    --b: 3;
+}
+
+.btn-hover:nth-child(4) {
+    --b: 4;
+}
+
+.btn-hover {
+    position: absolute;
+    left: calc((var(--b) - 1) * 25%);
+    width: 25%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: black;
+    transform: translateY(150%);
+    transition: 0.5s;
+    transition-delay: calc((var(--b) - 1) * 0.1s);
+    z-index: 1;
+}
+
+.btn-text {
+    position: relative;
+    z-index: 2;
+}
+
+/* Hover Effect  */
+
+a:hover {
+    color: white;
+}
+
+a:hover .btn-hover {
+    transform: translateY(0) scale(2);
+}
