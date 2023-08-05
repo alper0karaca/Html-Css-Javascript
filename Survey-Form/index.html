@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>freeCodeCamp Survey Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Alper Karaca -->
+
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+  <div class="container">
+
+<form id="survey-form">
+
+<fieldset>
+
+  <label id="name-label">Name <input required id="name" type="text" placeholder="Enter your name">
+  </label>
+
+  <label id="email-label">
+    Email <input required id="email" type="email" placeholder="Enter your email">
+  </label>
+
+  <label id="number-label">
+    Age(optional)
+    <input min="13" max="120" id="number" type="number" placeholder="Age">
+  </label>
+</fieldset>
+
+<fieldset>
+  <label>Which option best describes your current role?
+    <select id="dropdown">
+      <option>Select current role</option>
+      <option>Full Time Job</option>
+      <option>Full Time Learner</option>
+      <option>Prefer not to say</option>
+      <option>Other</option>
+    </select>
+  </label>
+
+  <label>
+    Would you recommend freeCodeCamp to a friend?
+      <input class="inline" value="radio1" name="radio-button" type="radio">Definitely
+    </label>
+
+    <label>
+    <input class="inline" value="radio2" name="radio-button" type="radio">Maybe
+    </label>
+
+    <label>
+    <input class="inline" value="radio3" name="radio-button" type="radio">Not sure
+  </label>
+
+
+</fieldset>
+
+<fieldset>
+
+    <label>
+    <input class="inline" value="1" type="checkbox">Front-end Projects
+    </label>
+
+    <label>
+    <input class="inline" value="2" type="checkbox">Back-end Projects
+    </label>
+
+    <label>
+    <input class="inline" value="3" type="checkbox">Data Visualization
+    </label>
+
+    <label>
+    <input class="inline" value="4" type="checkbox">Challenges
+    </label>
+
+    <label>
+    <input class="inline" value="5" type="checkbox">Open Source Community
+    </label>
+
+    <label>
+    <input class="inline" value="6" type="checkbox">Gitter help rooms
+    </label>
+
+    <label>
+    <input class="inline" value="7" type="checkbox">Videos
+    </label>
+
+    <label>
+    <input class="inline" value="8" type="checkbox">City Meetups
+    </label> 
+
+    <label>
+    <input class="inline" value="9" type="checkbox">Wiki
+  </label>
+
+    <label>
+    <input class="inline" value="10" type="checkbox">Forum
+    </label>
+
+    <label>
+    <input class="inline" value="11" type="checkbox">Additional Courses
+    </label>
+
+    <textarea rows="5" placeholder="Enter your comment here..."></textarea>
+
+
+
+</fieldset>
+
+<input value="Submit" id="submit" type="submit" >
+
+
+</form>
+</div>
+
+</body>
+
+
+</html>
